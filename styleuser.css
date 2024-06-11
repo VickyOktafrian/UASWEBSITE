@@ -1,0 +1,291 @@
+body {
+    font-family: 'Cuprum', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 2px -2px gray;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+#klik {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a img {
+    height: 37px;
+    width: auto;
+}
+
+.menu ul li span {
+    font-family: 'Gugi', sans-serif;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+.user-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.popup {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    padding: 20px;
+}
+.popup a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+.popup a:hover {
+    background-color: #f0f0f0;
+}
+.sidebar {
+    width: 200px;
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    padding-top: 80px; /* Adjust for fixed header */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-family: 'Gugi', sans-serif;
+    color: #ffcc00;
+    font-size: 36px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+#klik {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sidebar ul li a img {
+    margin-right: 10px;
+}
+
+.sidebar ul li a.active {
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 220px; /* Adjust to the width of the sidebar */
+    padding: 20px;
+    padding-top: 80px; /* Adjust to the height of the nav bar */
+    width: calc(100% - 220px); /* Adjust to the width of the sidebar */
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.dashboard .card {
+    background-color: #ffcc00;
+    color: #003366;
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .card.blue {
+    background-color: #003366;
+    color: #ffcc00;
+}
+
+.dashboard .card p {
+    margin: 10px 0 0;
+}
+
+.dashboard .card .update-time {
+    margin-top: auto;
+    font-size: 12px;
+}
+
+.welcome-message {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    border: 2px solid #ccc;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-red {
+    background-color: #f44336;
+    color: white;
+}
+
+.color-info {
+    margin-top: 20px;
+}
+
+.color-info h3 {
+    color: #003366;
+}
+
+.color-info p {
+    margin: 5px 0;
+}
+
+.color-red,
+.color-black {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.reservation-seats {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation-seats h3 {
+    margin-bottom: 10px;
+}
+
+.reservation-seats p {
+    margin-top: 0;
+}

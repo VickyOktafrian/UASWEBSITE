@@ -1,0 +1,177 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+nav {
+    width: 100%;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: fixed; 
+    margin: auto;
+    display:block;
+
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+#home{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#tentang{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.menu ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover,
+.menu ul li a:active {
+    text-decoration: underline;
+}
+
+#masuk {
+    background: #14308B;
+    padding: 14px 24px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 20px; 
+}
+
+#masuk:hover {
+    background: #5371d2;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.gambarperpus {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.gambarperpus img {
+    height: 857px;
+    width: 100%;
+    object-fit: cover; 
+    position: relative;
+    
+}
+
+.tulisan {
+    position: absolute;
+    padding: 60px 100px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: black;
+    text-align: center;
+    border-radius: 20px; 
+    z-index: 1
+}
+
+.tulisan h1 {
+    font-size: 128px;
+    color:  #E8B021;
+}
+
+.tulisan p {
+    font-size: 28px;
+    justify-self: center;
+    justify-content: center;
+}
+.tentang{
+    z-index: 1;
+    padding: 100px;
+    overflow: hidden;
+    background: #ffffff;
+    font-size: 24px;
+    color: black;
+
+    margin: auto;
+    text-align: center;
+    
+}
+.tentang h1{
+    font-size: 60px ;
+    font-weight: lighter;
+    color:  #E8B021;
+    font-family: 'Gugi';
+}
+#tentangbiru{
+    color: #14308B;
+}
+.bwh{
+    background: #E8B021;
+    padding: 50px;
+    font-size: 'Cuprum';
+    color: white;
+    font-size: 28px;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+}
+#text{
+    
+    
+    color: white;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+#text:hover{
+    text-decoration: underline;
+    cursor:pointer;
+
+}
+.footer{
+    font-size: 'Cuprum';
+    width: 100%;
+    padding: 20px 100px 20px 100px;
+    position: relative;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 28px;
+    background: #14308B;
+    color: #ffffff;
+    justify-content: center;
+}
+
